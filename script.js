@@ -1,16 +1,21 @@
+let avatar = document.getElementById('namePage');
+let fixed = document.getElementById('itemNamePage');
+let atr = document.getElementById('attrahar');
 
-const avatar = document.getElementById('namePage');
-const win = window.pageYOffset;
-function fun() {
 
-       if(win < 200 ){
-           avatar.style.opacity = '.1';
-        } else if( win > 200 && win <600){
+window.onscroll = function() {
+    let winSet = window.pageYOffset;
+    // console.log(winSet);
+    if(winSet < 360 ){
+           avatar.style.opacity = '0';
+        } else {
            avatar.style.opacity = '1';
-       } else {
-           avatar.style.opacity = '.5';
+           atr.style.position = fixed;
+
        }
+
+
 }
 
-fun();
+
 
