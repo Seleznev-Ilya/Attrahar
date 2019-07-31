@@ -45,7 +45,7 @@ body{
         height: 200px;
     }
     body{
-        animation: spin 45s linear alternate infinite;
+        animation: spin 75s linear alternate infinite;
     }
 }
 @keyframes spin {
@@ -62,7 +62,7 @@ body{
 }
 @media (max-width: 770px) {
     .header{
-        animation: spin 45s linear alternate infinite;
+        animation: spin 75s linear alternate infinite;
     }
 }
 .s_t{
